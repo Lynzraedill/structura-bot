@@ -1,137 +1,144 @@
-🤖 Structura — Discord Server Builder Bot
+# Structura — Discord Server Builder Bot  
+### By Skyline Bot Studio
 
-by Skyline Bot Studio
+Structura is a powerful automation bot designed to instantly create Discord server structures using simple slash commands.  
+It builds channels, categories, roles, ticket systems, and complete templates in seconds — perfect for new communities, game servers, creators, and studios.
 
-Structura is a Discord bot designed to build, organize, and manage Discord servers automatically.
-It helps server owners create layouts, categories, channels, and structures with simple slash commands.
+---
 
-🚀 Features
-🧱 Server Building Tools
+## 🚀 Install the Bot
 
-Create full server layouts in one command
+Click the link below to install Structura into your Discord server:
 
-Auto-generate categories and channels
+👉 **https://discord.com/oauth2/authorize?client_id=1439305412649287710&permissions=36775741456&integration_type=0&scope=bot+applications.commands**
 
-Export server structure
+---
 
-Save and load presets
+## ✨ Features
 
-Auto-clean duplicate channels
+### 🆓 Free Version
+- One-click server setup  
+- Auto-generated categories & channels  
+- Role creation tools  
+- Ticket panel system  
+- Pre-built server templates  
+- Welcome/rules channel generator  
+- Unlimited usage  
+- Lightweight and fast  
 
-🛠 Utility Tools
+### ⭐ Premium (Coming Soon)
+- Advanced automation templates  
+- Import/export server structures  
+- Dynamic onboarding flows  
+- Auto-moderation setups  
+- Multi-server Studio Mode  
+- Priority ticket support  
 
-Permission syncing
+---
 
-Layout visualizer
+## 📦 Commands Overview
 
-Import/export support
+### Core Commands
+| Command | Description |
+|--------|-------------|
+| `/setup` | Build a full server automatically |
+| `/addcategory` | Create a new category |
+| `/addchannel` | Create a text/voice channel |
+| `/addrole` | Add a role with permissions |
+| `/template-save` | Save the server structure |
+| `/template-load` | Load a saved template |
+| `/template-delete` | Delete a template |
+| `/ticket-panel` | Create a support panel |
 
-Server reset templates
+---
 
-🌐 Website & Documentation
+## 📚 Documentation
 
-Your full site is available at:
+Full website and documentation:
 
-👉 https://Lynzraedill.github.io/structura-bot/
+- **Homepage:** https://lynzraedill.github.io/structura  
+- **Usage Guide:** `docs/usage.md`  
+- **Developer Guide:** `docs/development.md`  
+- **Terms of Service:** `terms-of-service.html`  
+- **Privacy Policy:** `privacy-policy.html`  
 
-Website includes:
+---
 
-Tutorials
+## 🛠️ Self-Hosting
 
-Support
-
-Pricing
-
-Privacy Policy
-
-Terms of Service
-
-🔗 Invite Structura to Your Server
-
-Click below to install Structura:
-
-👉 https://discord.com/oauth2/authorize?client_id=1439305412649287710&permissions=36775741456&integration_type=0&scope=bot+applications.commands
-
-📦 Installation (Developers)
-
-Clone the repo:
-
+### 1. Clone the repository
+```bash
 git clone https://github.com/Lynzraedill/structura-bot.git
 cd structura-bot
+
+2. Install dependencies
 npm install
 
-
-Create a .env file with:
-
-DISCORD_BOT_TOKEN=your_bot_token_here
+3. Create a .env file
+DISCORD_BOT_TOKEN=your_token_here
 CLIENT_ID=1439305412649287710
+GUILD_ID=optional_server_id
 
-📁 Repository Structure
-structura-bot/
+4. Deploy slash commands
+node deploy-commands.js
+
+5. Start the bot
+node index.js
+
+📁 Project Structure
+structura/
+│
 ├── index.js
 ├── deploy-commands.js
 ├── package.json
-├── package-lock.json
+├── config.json
+├── .env (ignored)
 │
-├── docs/                     # Website pages for GitHub Pages
-│   ├── index.html
-│   ├── pricing.html
-│   ├── support.html
-│   ├── tutorials.html
-│   ├── privacy-policy.html
-│   ├── terms-of-service.html
-│   ├── styles.css
-│   └── assets/
-│       ├── structura_logo.png
-│       └── structura_banner.png
+├── docs/
+│   ├── README.md
+│   ├── usage.md
+│   ├── development.md
 │
-└── README.md
+├── index.html
+├── pricing.html
+├── support.html
+├── tutorials.html
+├── terms-of-service.html
+├── privacy-policy.html
+└── styles.css
 
-🧪 Testing & Early Access
+🧪 Early Access Tester Program
 
-Structura is currently seeking beta testers for:
+Selected testers receive:
 
-Premium features
+Free lifetime premium
 
-Layout marketplace
+Early feature access
 
-Advanced builder tools
+Direct feedback channel
 
-Import/export functions
+Credits (optional)
 
-To become a tester:
-👉 Contact: skylinebotstudio@outlook.com
+To join: Coming soon — via Discord support server.
 
-🛠 Support
+🛡️ Privacy & Terms
 
-If you need help:
+Terms of Service: /terms-of-service.html
 
-Visit: https://Lynzraedill.github.io/structura-bot/support.html
+Privacy Policy: /privacy-policy.html
 
-Or open a GitHub issue
+Structura does NOT store message content.
+All data stays local to your hosting environment.
 
-🛡 Privacy Policy & Terms
+📞 Support
 
-Structura does not store messages or sensitive user content.
-Full policies can be found on the website:
+Email: skylinebotstudio@outlook.com
 
-Privacy: /privacy-policy.html
+GitHub Issues: https://github.com/Lynzraedill/structura/issues
 
-Terms: /terms-of-service.html
+Discord Support Server: Coming soon
 
-🤝 Contributing
+❤️ Credits
 
-Pull requests and suggestions are welcome!
-
-Fork the repo
-
-Create a branch
-
-Commit your changes
-
-Open a PR
-
-⭐ Credits
-
-Developed by Skyline Bot Studio
-📧 skylinebotstudio@outlook.com
+Structura is built and maintained by Skyline Bot Studio.
+Designed to help communities build smarter, faster, and safer Discord servers.
