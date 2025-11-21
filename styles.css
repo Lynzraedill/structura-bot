@@ -1,0 +1,160 @@
+/* =============================
+   SKYLINE BOT STUDIO — THEME
+   Structura GitHub Pages Stylesheet
+   ============================= */
+
+/* GLOBAL RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0e13;
+    color: #e6e9ef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    padding-bottom: 50px;
+}
+
+/* HEADERS & HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #1b1f29, #0b0e13);
+    border-bottom: 1px solid #1f2a3a;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    color: #6bc1ff;
+    text-shadow: 0 0 10px #3a99e8;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #aac9e8;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn.primary {
+    background: #6bc1ff;
+    color: #0b0e13;
+}
+
+.btn.primary:hover {
+    background: #8ed4ff;
+}
+
+.btn.secondary {
+    background: #1e2633;
+    color: #6bc1ff;
+    border: 1px solid #6bc1ff;
+}
+
+.btn.secondary:hover {
+    background: #2a3445;
+}
+
+.btn.outline {
+    border: 1px solid #49566a;
+    color: #cdd7e6;
+}
+
+.btn.outline:hover {
+    border-color: #6bc1ff;
+    color: #6bc1ff;
+}
+
+/* MAIN SECTION STYLES */
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6bc1ff;
+}
+
+.section p {
+    font-size: 1.1rem;
+}
+
+.section.alt {
+    background: #11151c;
+    border-top: 1px solid #1f2a3a;
+    border-bottom: 1px solid #1f2a3a;
+}
+
+/* FEATURES GRID */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.feature-box {
+    padding: 25px;
+    background: #131922;
+    border: 1px solid #1f2a3a;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-4px);
+    border-color: #6bc1ff;
+}
+
+/* LINK LISTS */
+.link-list {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    color: #6bc1ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #1f2a3a;
+    color: #6bc1ff;
+    font-size: 0.9rem;
+}
