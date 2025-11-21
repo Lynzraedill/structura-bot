@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Structura | Skyline Bot Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Structura Support</h1>
+    <p class="subtitle">Help, troubleshooting, and contact information</p>
+
+    <div class="buttons">
+        <a href="index.html" class="btn outline">Home</a>
+        <a href="pricing.html" class="btn secondary">Pricing</a>
+    </div>
+</header>
+
+<main>
+
+<section class="section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>Why are my commands not showing up?</h3>
+        <p>After installing the bot, Discord may take 1–5 minutes to register slash commands.  
+        Make sure your bot is online and the token in your `.env` file is valid.</p>
+    </div>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>Does Structura read or store chat messages?</h3>
+        <p>No. The bot only reads slash commands and does not store messages or logs.</p>
+    </div>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>Can I delete channels after Structura creates them?</h3>
+        <p>Yes. The bot will not recreate deleted channels unless you run a setup or load a template.</p>
+    </div>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>How do I save a server layout?</h3>
+        <p>Use <code>/template-save</code> to store the entire channel + role structure.</p>
+    </div>
+</section>
+
+
+<section class="section alt">
+    <h2>Troubleshooting</h2>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>🚫 Commands not responding</h3>
+        <ul>
+            <li>Check the bot is online</li>
+            <li>Restart your bot host (or Replit/VPS/local machine)</li>
+            <li>Run <code>node deploy-commands.js</code> again</li>
+            <li>Verify the bot’s permissions include Manage Roles + Manage Channels</li>
+        </ul>
+    </div>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>🔑 "Missing Access" error</h3>
+        <ul>
+            <li>Make sure the bot role is HIGHER than the roles it manages</li>
+            <li>Make sure the bot has "Manage Roles" permission</li>
+        </ul>
+    </div>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>💥 Template isn’t loading</h3>
+        <p>This means your template file is missing or corrupted. Try resaving it with <code>/template-save</code>.</p>
+    </div>
+
+    <div class="feature-box" style="text-align:left;">
+        <h3>🐛 Bot crashed</h3>
+        <p>Check your terminal for errors. Missing commas or broken JSON in <code>config.json</code> are the most common cause.</p>
+    </div>
+</section>
+
+
+<section class="section">
+    <h2>Helpful Tools</h2>
+    <ul class="link-list">
+        <li><a href="docs/usage.html">📘 Setup & Usage Guide</a></li>
+        <li><a href="docs/development.html">🛠️ Developer Guide</a></li>
+        <li><a href="privacy-policy.html">🔒 Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">⚖️ Terms of Service</a></li>
+    </ul>
+</section>
+
+
+<section class="section alt">
+    <h2>Contact & Support</h2>
+    <p>If you need help, have feedback, or need to report a bug, you can reach us at:</p>
+
+    <p style="margin-top:20px;">
+        📧 <strong>skylinebotstudio@outlook.com</strong><br>
+        🛠️ GitHub Issues: <a href="https://github.com/Lynzraedill/structura/issues">Open an Issue</a><br>
+        🗨️ Discord Support Server (coming soon)
+    </p>
+
+    <p style="margin-top:20px; font-size:0.9rem;">
+        For urgent issues, include logs, error messages, or screenshots if possible.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 Skyline Bot Studio — Structura Bot</p>
+</footer>
+
+</body>
+</html>
