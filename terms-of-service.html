@@ -1,144 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service — Structura | Skyline Bot Studio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Terms of Service – Structura Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b1020;
+      color: #f7fafc;
+    }
+    header {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      padding: 20px 24px;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 4px 0 0;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #e0e7ff;
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    h2, h3 {
+      color: #bfdbfe;
+    }
+    a {
+      color: #38bdf8;
+    }
+    section {
+      margin-bottom: 24px;
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      border: 1px solid #1f2937;
+    }
+    button, .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+    button.secondary, .button.secondary {
+      background: transparent;
+      border: 1px solid #4b5563;
+      color: #e5e7eb;
+    }
+    button:hover, .button:hover {
+      opacity: 0.9;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 16px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-
 <header>
-    <h1>Structura — Terms of Service</h1>
-    <p>Skyline Bot Studio</p>
+  <h1>Structura Bot</h1>
+  <p>Server building made simple – by Skyline Bot Studio</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="support.html">Support</a>
+    <a href="tutorials.html">Tutorials</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </nav>
 </header>
-
 <main>
 
 <section>
-    <h2>1. Acceptance of Terms</h2>
-    <p>
-        By adding Structura (“the Bot”) to your Discord server, using its commands, 
-        or accessing any related services by Skyline Bot Studio (“the Developer”), 
-        you agree to these Terms of Service. If you do not agree, you must remove the Bot immediately.
-    </p>
+  <h2>Terms of Service for Structura</h2>
+  <p><strong>Last Updated:</strong> November 2025<br>
+  <strong>Developer:</strong> Skyline Bot Studio</p>
 </section>
 
 <section>
-    <h2>2. Description of Service</h2>
-    <p>
-        Structura is a Discord automation system designed to create channels, categories, roles, 
-        templates, and server structures through slash commands. Optional premium features 
-        may be offered in the future.
-    </p>
+  <h3>Acceptance of Terms</h3>
+  <p>By inviting or using Structura, you agree to these Terms of Service and to Discord’s Terms and Community Guidelines. If you do not agree, remove the bot from your server.</p>
 </section>
 
 <section>
-    <h2>3. User Data & Storage</h2>
-    <p>
-        Structura does <strong>not store message content</strong> or forward any data to external servers.
-        The Bot only collects and stores data necessary for core operation:
-    </p>
-    <ul>
-        <li>Server ID</li>
-        <li>Channel IDs created by the bot</li>
-        <li>Role IDs created by the bot</li>
-        <li>Template data (server layout backups)</li>
-        <li>Command usage logs (success/error)</li>
-        <li>User ID for ticket creation or role automation</li>
-    </ul>
-    <p>
-        All data is stored <strong>locally on your server host</strong> (your bot runtime environment) and is 
-        never shared with third parties.
-    </p>
+  <h3>Use of Structura</h3>
+  <p>Structura is provided to help users:</p>
+  <ul>
+    <li>Create Discord server structures</li>
+    <li>Build channels and categories</li>
+    <li>Generate and load templates</li>
+    <li>Automate server setup</li>
+  </ul>
+  <p>You agree not to use the bot for:</p>
+  <ul>
+    <li>Illegal activities</li>
+    <li>Harassment or hateful conduct</li>
+    <li>Abusive or harmful servers</li>
+    <li>Attempting to hack, exploit, or reverse-engineer the bot</li>
+  </ul>
 </section>
 
 <section>
-    <h2>4. Prohibited Use</h2>
-    <p>You agree to not use Structura to:</p>
-    <ul>
-        <li>Automate harmful, abusive, or unlawful actions</li>
-        <li>Evade Discord moderation systems</li>
-        <li>Create malicious or deceptive server structures</li>
-        <li>Spam members, roles, or channels</li>
-        <li>Access data the bot was not intended to collect</li>
-    </ul>
+  <h3>Premium Features</h3>
+  <p>Structura may offer optional premium features. These may include:</p>
+  <ul>
+    <li>Advanced auto-build tools</li>
+    <li>Priority support</li>
+    <li>Unlimited template saves</li>
+    <li>Additional layout packs</li>
+  </ul>
+  <p>Premium payments (when launched) are generally non-refundable except where legally required.</p>
 </section>
 
 <section>
-    <h2>5. Bot Uptime & Availability</h2>
-    <p>
-        Structura is provided “as is”.  
-        The Developer does not guarantee:
-    </p>
-    <ul>
-        <li>100% uptime</li>
-        <li>Permanent command availability</li>
-        <li>Compatibility with future Discord API changes</li>
-    </ul>
-    <p>
-        You are responsible for monitoring your own bot hosting if self-hosting.
-    </p>
+  <h3>Bot Availability</h3>
+  <p>Although we aim for stable uptime, Structura may go offline due to:</p>
+  <ul>
+    <li>Discord outages</li>
+    <li>Hosting downtime</li>
+    <li>Maintenance or updates</li>
+    <li>Errors or technical issues</li>
+  </ul>
+  <p>Skyline Bot Studio is not responsible for downtime or data loss caused by the Discord platform or misuse.</p>
 </section>
 
 <section>
-    <h2>6. Early Access Testers</h2>
-    <p>
-        Testers may receive free or early access in exchange for feedback.  
-        All testers agree:
-    </p>
-    <ul>
-        <li>To report bugs honestly</li>
-        <li>Not to publicly leak features before release</li>
-        <li>Not to sell or redistribute the bot</li>
-        <li>To use the bot at their own risk during testing</li>
-    </ul>
+  <h3>Limitation of Liability</h3>
+  <p>Structura is provided “as is.” By using the bot, you agree that:</p>
+  <ul>
+    <li>We are not liable for server misconfigurations caused by user actions.</li>
+    <li>We are not responsible for user-caused data loss.</li>
+    <li>We are not responsible for Discord outages or platform changes.</li>
+    <li>We are not liable for any damages arising from using or being unable to use the bot.</li>
+  </ul>
 </section>
 
 <section>
-    <h2>7. Premium Features</h2>
-    <p>
-        Some features may become paid in the future (templates, automation packs, cloud backups, etc.).  
-        Premium features are optional and not required to use the basic version.
-    </p>
+  <h3>Termination of Access</h3>
+  <p>We may restrict or terminate access if:</p>
+  <ul>
+    <li>The bot is abused or exploited.</li>
+    <li>Users violate these Terms.</li>
+    <li>Harmful activity or security risks are detected.</li>
+  </ul>
+  <p>You may remove the bot from your server at any time.</p>
 </section>
 
 <section>
-    <h2>8. Liability</h2>
-    <p>
-        Skyline Bot Studio is not responsible for:
-    </p>
-    <ul>
-        <li>Damage to your server caused by misuse of commands</li>
-        <li>Accidental deletion caused by user error</li>
-        <li>Actions taken by administrators in your server</li>
-        <li>Host-related data loss (e.g., local file storage problems)</li>
-    </ul>
+  <h3>Governing Law</h3>
+  <p>These Terms are governed by the laws of the United States and applicable international law.</p>
 </section>
 
 <section>
-    <h2>9. Termination</h2>
-    <p>
-        You may remove the bot at any time.  
-        The Developer may block usage for abuse, fraud, or API violations.
-    </p>
-</section>
-
-<section>
-    <h2>10. Contact</h2>
-    <p>
-        For support, questions, or concerns:
-    </p>
-    <p>
-        📧 Email: <strong>skylinebotstudio@outlook.com</strong><br>
-        🌐 Website: Coming Soon  
-    </p>
+  <h3>Contact</h3>
+  <p>For support, questions, or data removal requests:</p>
+  <p>Email: <a href="mailto:skylinebotstudio@outlook.com">skylinebotstudio@outlook.com</a></p>
 </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Skyline Bot Studio — All Rights Reserved.</p>
+  <p>© 2025 Skyline Bot Studio – Structura Bot</p>
+  <p>
+    <a href="index.html">Home</a> ·
+    <a href="pricing.html">Pricing</a> ·
+    <a href="support.html">Support</a> ·
+    <a href="tutorials.html">Tutorials</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms-of-service.html">Terms of Service</a>
+  </p>
 </footer>
 
 </body>

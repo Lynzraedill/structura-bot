@@ -1,84 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structura — Discord Server Builder Bot</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Home – Structura Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b1020;
+      color: #f7fafc;
+    }
+    header {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      padding: 20px 24px;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 4px 0 0;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #e0e7ff;
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    h2, h3 {
+      color: #bfdbfe;
+    }
+    a {
+      color: #38bdf8;
+    }
+    section {
+      margin-bottom: 24px;
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      border: 1px solid #1f2937;
+    }
+    button, .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+    button.secondary, .button.secondary {
+      background: transparent;
+      border: 1px solid #4b5563;
+      color: #e5e7eb;
+    }
+    button:hover, .button:hover {
+      opacity: 0.9;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 16px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-
-<header class="hero">
-    <h1>STRUCTURA</h1>
-    <p class="subtitle">The Smart, Fast, Automatic Discord Server Builder</p>
-
-    <div class="buttons">
-        <a href="https://discord.com/oauth2/authorize?client_id=1439305412649287710&permissions=36775741456&integration_type=0&scope=bot+applications.commands" class="btn primary">Install Bot</a>
-        <a href="docs/usage.html" class="btn secondary">Documentation</a>
-        <a href="https://github.com/Lynzraedill/structura" class="btn outline">GitHub Repo</a>
-    </div>
+<header>
+  <h1>Structura Bot</h1>
+  <p>Server building made simple – by Skyline Bot Studio</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="support.html">Support</a>
+    <a href="tutorials.html">Tutorials</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </nav>
 </header>
-
-
 <main>
 
-<section class="section">
-    <h2>Build Entire Servers in Minutes</h2>
-    <p>
-        Structura is an automation bot designed to instantly create categories, channels, roles, templates, 
-        and ticket systems using simple slash commands.  
-        Perfect for creators, communities, game servers, and studio teams.
-    </p>
+<section>
+  <h2>Build Discord servers in seconds</h2>
+  <p>Structura is a smart Discord bot that creates full server layouts in just a few clicks. No more making channels by hand – Structura does the heavy lifting so you can focus on your community.</p>
+  <p>
+    <a class="button" href="https://discord.com/oauth2/authorize?client_id=1439305412649287710&permissions=36775741456&scope=bot%20applications.commands" target="_blank" rel="noopener noreferrer">➕ Add Structura to Your Server</a>
+    <a class="button secondary" href="support.html">🎫 Get Support</a>
+  </p>
 </section>
 
-<section class="section features">
-    <div class="feature-box">
-        <h3>⚡ One-Click Server Setup</h3>
-        <p>Generate channels, roles, and categories instantly using /setup.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3>📁 Save & Load Templates</h3>
-        <p>Back up your server layouts and recreate them whenever needed.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3>🎟️ Ticket System</h3>
-        <p>Create support panels and manage tickets directly inside Discord.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3>🛠️ Full Automation Tools</h3>
-        <p>Roles, permissions, categories, onboarding & structure builders.</p>
-    </div>
+<section>
+  <h3>What Structura can do</h3>
+  <ul>
+    <li>Generate complete server layouts from templates.</li>
+    <li>Create categories and channels in one command.</li>
+    <li>Save and load reusable templates for new servers.</li>
+    <li>Help freelancers and server owners standardize setups.</li>
+    <li>Offer future premium features for advanced automation.</li>
+  </ul>
 </section>
 
-
-<section class="section alt">
-    <h2>Built by Skyline Bot Studio</h2>
-    <p>
-        Structura is developed by Skyline Bot Studio — tools designed to empower creators, 
-        moderators, and communities.  
-        We focus on automation, safety, and user control.
-    </p>
+<section>
+  <h3>Safe by design</h3>
+  <p>Structura only stores the minimum data required for bot features to work:</p>
+  <ul>
+    <li>User IDs</li>
+    <li>Guild (server) IDs</li>
+    <li>Channel and category IDs</li>
+    <li>Server layout and template data</li>
+    <li>Premium access status (if used)</li>
+  </ul>
+  <p>The bot does <strong>not</strong> store message content, direct messages, or sensitive personal information.</p>
+  <p>Read more in our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-service.html">Terms of Service</a>.</p>
 </section>
 
-
-<section class="section">
-    <h2>Useful Links</h2>
-    <ul class="link-list">
-        <li><a href="docs/usage.html">Getting Started</a></li>
-        <li><a href="docs/development.html">Developer Guide</a></li>
-        <li><a href="docs/privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="docs/terms-of-service.html">Terms of Service</a></li>
-    </ul>
+<section>
+  <h3>About Skyline Bot Studio</h3>
+  <p>Structura is created by Skyline Bot Studio – a small, independent developer focused on helpful, transparent Discord tools.</p>
+  <p>If you have questions, ideas, or feedback, please reach out:</p>
+  <ul>
+    <li>Email: <a href="mailto:skylinebotstudio@outlook.com">skylinebotstudio@outlook.com</a></li>
+  </ul>
 </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Skyline Bot Studio — Structura Bot</p>
+  <p>© 2025 Skyline Bot Studio – Structura Bot</p>
+  <p>
+    <a href="index.html">Home</a> ·
+    <a href="pricing.html">Pricing</a> ·
+    <a href="support.html">Support</a> ·
+    <a href="tutorials.html">Tutorials</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms-of-service.html">Terms of Service</a>
+  </p>
 </footer>
 
 </body>

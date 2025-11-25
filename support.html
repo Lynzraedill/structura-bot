@@ -1,115 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support — Structura | Skyline Bot Studio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Support – Structura Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b1020;
+      color: #f7fafc;
+    }
+    header {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      padding: 20px 24px;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 4px 0 0;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #e0e7ff;
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    h2, h3 {
+      color: #bfdbfe;
+    }
+    a {
+      color: #38bdf8;
+    }
+    section {
+      margin-bottom: 24px;
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      border: 1px solid #1f2937;
+    }
+    button, .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+    button.secondary, .button.secondary {
+      background: transparent;
+      border: 1px solid #4b5563;
+      color: #e5e7eb;
+    }
+    button:hover, .button:hover {
+      opacity: 0.9;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 16px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-
-<header class="hero">
-    <h1>Structura Support</h1>
-    <p class="subtitle">Help, troubleshooting, and contact information</p>
-
-    <div class="buttons">
-        <a href="index.html" class="btn outline">Home</a>
-        <a href="pricing.html" class="btn secondary">Pricing</a>
-    </div>
+<header>
+  <h1>Structura Bot</h1>
+  <p>Server building made simple – by Skyline Bot Studio</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="support.html">Support</a>
+    <a href="tutorials.html">Tutorials</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </nav>
 </header>
-
 <main>
 
-<section class="section">
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>Why are my commands not showing up?</h3>
-        <p>After installing the bot, Discord may take 1–5 minutes to register slash commands.  
-        Make sure your bot is online and the token in your `.env` file is valid.</p>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>Does Structura read or store chat messages?</h3>
-        <p>No. The bot only reads slash commands and does not store messages or logs.</p>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>Can I delete channels after Structura creates them?</h3>
-        <p>Yes. The bot will not recreate deleted channels unless you run a setup or load a template.</p>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>How do I save a server layout?</h3>
-        <p>Use <code>/template-save</code> to store the entire channel + role structure.</p>
-    </div>
+<section>
+  <h2>Support and Contact</h2>
+  <p>If you need help using Structura, have found a bug, or want to request a feature, you can reach out in a few ways.</p>
 </section>
 
-
-<section class="section alt">
-    <h2>Troubleshooting</h2>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>🚫 Commands not responding</h3>
-        <ul>
-            <li>Check the bot is online</li>
-            <li>Restart your bot host (or Replit/VPS/local machine)</li>
-            <li>Run <code>node deploy-commands.js</code> again</li>
-            <li>Verify the bot’s permissions include Manage Roles + Manage Channels</li>
-        </ul>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>🔑 "Missing Access" error</h3>
-        <ul>
-            <li>Make sure the bot role is HIGHER than the roles it manages</li>
-            <li>Make sure the bot has "Manage Roles" permission</li>
-        </ul>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>💥 Template isn’t loading</h3>
-        <p>This means your template file is missing or corrupted. Try resaving it with <code>/template-save</code>.</p>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>🐛 Bot crashed</h3>
-        <p>Check your terminal for errors. Missing commas or broken JSON in <code>config.json</code> are the most common cause.</p>
-    </div>
+<section>
+  <h3>Before you ask</h3>
+  <ul>
+    <li>Make sure Structura has the right permissions (Manage Channels, Send Messages, etc.).</li>
+    <li>Check that the bot is online in your server.</li>
+    <li>Try the basic commands again and note any error messages.</li>
+  </ul>
 </section>
 
-
-<section class="section">
-    <h2>Helpful Tools</h2>
-    <ul class="link-list">
-        <li><a href="docs/usage.html">📘 Setup & Usage Guide</a></li>
-        <li><a href="docs/development.html">🛠️ Developer Guide</a></li>
-        <li><a href="privacy-policy.html">🔒 Privacy Policy</a></li>
-        <li><a href="terms-of-service.html">⚖️ Terms of Service</a></li>
-    </ul>
-</section>
-
-
-<section class="section alt">
-    <h2>Contact & Support</h2>
-    <p>If you need help, have feedback, or need to report a bug, you can reach us at:</p>
-
-    <p style="margin-top:20px;">
-        📧 <strong>skylinebotstudio@outlook.com</strong><br>
-        🛠️ GitHub Issues: <a href="https://github.com/Lynzraedill/structura/issues">Open an Issue</a><br>
-        🗨️ Discord Support Server (coming soon)
-    </p>
-
-    <p style="margin-top:20px; font-size:0.9rem;">
-        For urgent issues, include logs, error messages, or screenshots if possible.
-    </p>
+<section>
+  <h3>Contact Options</h3>
+  <ul>
+    <li>Email support: <a href="mailto:skylinebotstudio@outlook.com">skylinebotstudio@outlook.com</a></li>
+    <li>If provided, use the official support Discord server link or ticket system.</li>
+  </ul>
+  <p>When you contact support, please include:</p>
+  <ul>
+    <li>Your Discord username and server name.</li>
+    <li>What command you tried.</li>
+    <li>Screenshots or a copy of any error message.</li>
+  </ul>
 </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Skyline Bot Studio — Structura Bot</p>
+  <p>© 2025 Skyline Bot Studio – Structura Bot</p>
+  <p>
+    <a href="index.html">Home</a> ·
+    <a href="pricing.html">Pricing</a> ·
+    <a href="support.html">Support</a> ·
+    <a href="tutorials.html">Tutorials</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms-of-service.html">Terms of Service</a>
+  </p>
 </footer>
 
 </body>

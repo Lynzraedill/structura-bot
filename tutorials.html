@@ -1,114 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorials — Structura | Skyline Bot Studio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Tutorials – Structura Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b1020;
+      color: #f7fafc;
+    }
+    header {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      padding: 20px 24px;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 4px 0 0;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #e0e7ff;
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    h2, h3 {
+      color: #bfdbfe;
+    }
+    a {
+      color: #38bdf8;
+    }
+    section {
+      margin-bottom: 24px;
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      border: 1px solid #1f2937;
+    }
+    button, .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+    button.secondary, .button.secondary {
+      background: transparent;
+      border: 1px solid #4b5563;
+      color: #e5e7eb;
+    }
+    button:hover, .button:hover {
+      opacity: 0.9;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 16px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-
-<header class="hero">
-    <h1>Structura Tutorials</h1>
-    <p class="subtitle">Learn how to use Structura step-by-step</p>
-
-    <div class="buttons">
-        <a href="index.html" class="btn outline">Home</a>
-        <a href="pricing.html" class="btn secondary">Pricing</a>
-        <a href="support.html" class="btn secondary">Support</a>
-    </div>
+<header>
+  <h1>Structura Bot</h1>
+  <p>Server building made simple – by Skyline Bot Studio</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="support.html">Support</a>
+    <a href="tutorials.html">Tutorials</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </nav>
 </header>
-
 <main>
 
-<section class="section">
-    <h2>Getting Started</h2>
-    <p>This section covers the basics — installing the bot, verifying commands, and running your first setup.</p>
+<section>
+  <h2>Getting Started with Structura</h2>
+  <p>This page provides a simple overview of how to begin using Structura in your Discord server.</p>
 </section>
 
-<section class="section features">
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>📥 1. Install the Bot</h3>
-        <p>Use the official install link:</p>
-        <p><code>https://discord.com/oauth2/authorize?client_id=1439305412649287710&permissions=36775741456&integration_type=0&scope=bot+applications.commands</code></p>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>⚙️ 2. Check Bot Permissions</h3>
-        <p>Make sure Structura has:</p>
-        <ul>
-            <li>Manage Channels</li>
-            <li>Manage Roles</li>
-            <li>Manage Server</li>
-            <li>Send Messages</li>
-            <li>Use Slash Commands</li>
-        </ul>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>📂 3. Run Your First Setup</h3>
-        <p>Type:</p>
-        <code>/setup</code>
-        <p>Structura will generate channels, roles, and categories instantly.</p>
-    </div>
-
+<section>
+  <h3>1. Invite the Bot</h3>
+  <p>Use this link to invite Structura to your server:</p>
+  <p><a class="button" href="https://discord.com/oauth2/authorize?client_id=1439305412649287710&permissions=36775741456&scope=bot%20applications.commands" target="_blank" rel="noopener noreferrer">➕ Add Structura to Your Server</a></p>
+  <p>Make sure you give the bot the recommended permissions so it can create categories and channels.</p>
 </section>
 
-
-<section class="section alt">
-    <h2>Video Tutorials (Coming Soon)</h2>
-    <p>Video guides will appear here once your testing phase is complete.</p>
-    <div class="feature-box">
-        <p>🎥 <em>Video Tutorial Placeholder</em></p>
-    </div>
+<section>
+  <h3>2. Basic Usage</h3>
+  <p>Once Structura is in your server, you can start with basic commands such as:</p>
+  <ul>
+    <li>Listing available layouts.</li>
+    <li>Applying a layout to create channels and categories.</li>
+    <li>Saving your current server structure as a reusable template.</li>
+  </ul>
+  <p>Refer to your in-Discord help command or documentation for the exact slash command names once they are finalized.</p>
 </section>
 
-<section class="section">
-    <h2>Advanced Tutorials</h2>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>📁 Saving a Template</h3>
-        <p>Use <code>/template-save</code> to save your entire server layout.</p>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>📤 Loading a Template</h3>
-        <p>Restore saved layouts with:</p>
-        <code>/template-load</code>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>🎟️ Creating a Ticket Panel</h3>
-        <p>Use:</p>
-        <code>/ticket-panel</code>
-        <p>Members can open support tickets directly in your server.</p>
-    </div>
-
-    <div class="feature-box" style="text-align:left;">
-        <h3>🛠️ Role & Permission Automation</h3>
-        <p>Automatically generate server roles with:</p>
-        <code>/addrole</code>
-    </div>
-
+<section>
+  <h3>3. Tips for Best Results</h3>
+  <ul>
+    <li>Test new layouts in a private or test server first.</li>
+    <li>Be sure you understand which channels will be created or modified.</li>
+    <li>Use saved templates to quickly set up similar servers (for clients, projects, or communities).</li>
+  </ul>
 </section>
 
-
-<section class="section alt">
-    <h2>Tutorial Request Form</h2>
-    <p>If you want a custom tutorial, contact us:</p>
-
-    <p style="margin-top:20px;">
-        📧 <strong>skylinebotstudio@outlook.com</strong><br>
-        🛠️ GitHub Issues: <a href="https://github.com/Lynzraedill/structura/issues">Request a Tutorial</a>
-    </p>
+<section>
+  <h3>More Tutorials Coming Soon</h3>
+  <p>As Structura grows, more step-by-step guides, videos, and example layouts will be provided.</p>
 </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Skyline Bot Studio — Structura Bot</p>
+  <p>© 2025 Skyline Bot Studio – Structura Bot</p>
+  <p>
+    <a href="index.html">Home</a> ·
+    <a href="pricing.html">Pricing</a> ·
+    <a href="support.html">Support</a> ·
+    <a href="tutorials.html">Tutorials</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms-of-service.html">Terms of Service</a>
+  </p>
 </footer>
 
 </body>

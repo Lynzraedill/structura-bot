@@ -1,157 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Structura | Skyline Bot Studio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – Structura Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b1020;
+      color: #f7fafc;
+    }
+    header {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      padding: 20px 24px;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 4px 0 0;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #e0e7ff;
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    h2, h3 {
+      color: #bfdbfe;
+    }
+    a {
+      color: #38bdf8;
+    }
+    section {
+      margin-bottom: 24px;
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      border: 1px solid #1f2937;
+    }
+    button, .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+    button.secondary, .button.secondary {
+      background: transparent;
+      border: 1px solid #4b5563;
+      color: #e5e7eb;
+    }
+    button:hover, .button:hover {
+      opacity: 0.9;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 16px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-
 <header>
-    <h1>Structura — Privacy Policy</h1>
-    <p>Skyline Bot Studio</p>
+  <h1>Structura Bot</h1>
+  <p>Server building made simple – by Skyline Bot Studio</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="support.html">Support</a>
+    <a href="tutorials.html">Tutorials</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </nav>
 </header>
-
 <main>
 
 <section>
-    <h2>1. Introduction</h2>
-    <p>
-        Skyline Bot Studio (“we”, “our”, “us”) operates the Structura Discord bot (“the Bot”). 
-        This Privacy Policy outlines how we collect, use, and protect information in relation to our bot and services.
-        By using Structura, you agree to the terms described here.
-    </p>
+  <h2>Privacy Policy for Structura</h2>
+  <p><strong>Last Updated:</strong> November 2025<br>
+  <strong>Developer:</strong> Skyline Bot Studio<br>
+  <strong>Contact:</strong> <a href="mailto:skylinebotstudio@outlook.com">skylinebotstudio@outlook.com</a></p>
 </section>
 
 <section>
-    <h2>2. Information We Collect</h2>
-    <p>
-        Structura collects only the minimum data required for features such as server setup, templates, 
-        role management, and ticket panels. We <strong>do not store message content</strong> or any private user information.
-    </p>
-
-    <h3>Data Structura May Store:</h3>
-    <ul>
-        <li>Server ID</li>
-        <li>User ID (only for ticket creation or role assignment)</li>
-        <li>Channel IDs created by the bot</li>
-        <li>Role IDs created by the bot</li>
-        <li>Server layout templates (if you save a template)</li>
-        <li>Ticket logs (open/close timestamps, not message content)</li>
-        <li>Bot errors and usage analytics (local logs only)</li>
-    </ul>
+  <h3>Introduction</h3>
+  <p>Structura is a Discord automation bot developed by Skyline Bot Studio. This Privacy Policy explains what information the bot collects, how it is used, and how your information is protected. By using Structura, you agree to the practices described in this policy.</p>
 </section>
 
 <section>
-    <h2>3. Data We Do NOT Collect</h2>
-    <p>
-        Structura does <strong>NOT</strong> collect, store, or transmit:
-    </p>
-    <ul>
-        <li>User messages</li>
-        <li>DM content</li>
-        <li>Media files or attachments</li>
-        <li>Server chat logs</li>
-        <li>Your IP address</li>
-        <li>Any identifying personal info (name, email, location)</li>
-        <li>Credentials, passwords, or payment information</li>
-    </ul>
+  <h3>Information We Collect</h3>
+  <h4>Automatically Collected Data</h4>
+  <p>Structura only collects and stores the minimum data needed for the bot to function:</p>
+  <ul>
+    <li>User IDs</li>
+    <li>Guild (Server) IDs</li>
+    <li>Channel and Category IDs</li>
+    <li>Server layout data</li>
+    <li>Saved templates</li>
+    <li>Permission settings</li>
+    <li>Premium subscription status</li>
+    <li>Technical error logs (no message content)</li>
+  </ul>
+  <h4>Information We Do Not Collect</h4>
+  <p>Structura does <strong>not</strong> store, log, or access:</p>
+  <ul>
+    <li>Message content</li>
+    <li>Direct messages</li>
+    <li>User conversations</li>
+    <li>Attachments</li>
+    <li>Personal profile information</li>
+    <li>IP addresses</li>
+    <li>Sensitive personal data</li>
+  </ul>
+  <p>Structura is intentionally designed to avoid collecting unnecessary or personal information.</p>
 </section>
 
 <section>
-    <h2>4. Where Data is Stored</h>
-    <p>
-        All stored data is kept <strong>locally on the system hosting the bot</strong>:
-    </p>
-    <ul>
-        <li>Your own device (if self-hosted)</li>
-        <li>Your server hosting provider (e.g., VPS, cloud service)</li>
-    </ul>
-    <p>
-        We do not operate external servers or databases for Structura.  
-        No data is ever transferred to Skyline Bot Studio without your knowledge.
-    </p>
+  <h3>How Your Data Is Used</h3>
+  <p>Structura uses stored data solely to:</p>
+  <ul>
+    <li>Create server layouts</li>
+    <li>Save and load templates</li>
+    <li>Manage channels and categories automatically</li>
+    <li>Track premium features</li>
+    <li>Maintain bot performance and fix issues</li>
+  </ul>
+  <p>Your data is never used for advertising, profiling, or analytics.</p>
 </section>
 
 <section>
-    <h2>5. How We Use Data</h2>
-    <p>Data is used only to enable core bot features:</p>
-
-    <ul>
-        <li>Creating server layouts and templates</li>
-        <li>Managing channels and roles</li>
-        <li>Operating ticket panels</li>
-        <li>Providing server automation features</li>
-        <li>Debugging errors (local logs only)</li>
-    </ul>
+  <h3>Data Sharing</h3>
+  <p>Structura does not sell, share, or transfer your data to:</p>
+  <ul>
+    <li>Advertisers</li>
+    <li>Marketing platforms</li>
+    <li>Data brokers</li>
+    <li>Analytics companies</li>
+    <li>Third parties</li>
+  </ul>
+  <p>The only exception is when required by law (rare).</p>
 </section>
 
 <section>
-    <h2>6. Data Retention & Deletion</h2>
-    <p>
-        Template data and bot-created IDs remain stored until:
-    </p>
-    <ul>
-        <li>You delete the files from your host device, or</li>
-        <li>You uninstall/remove the bot from your server</li>
-    </ul>
-    <p>
-        If you request data deletion, you simply delete the bot’s storage folder or reinstall it.
-    </p>
+  <h3>Data Retention</h3>
+  <p>We retain data only as long as needed:</p>
+  <ul>
+    <li>Templates remain saved until deleted</li>
+    <li>Server layout data is deleted when the bot is removed from a server</li>
+    <li>Error logs are temporary and cleared during updates</li>
+  </ul>
 </section>
 
 <section>
-    <h2>7. Third-Party Sharing</h2>
-    <p>
-        Structura does <strong>not</strong> share or sell data to third parties.  
-        No information is shared with advertisers, analytics companies, or any outside entity.
-    </p>
+  <h3>Data Deletion Requests</h3>
+  <p>You may request deletion of:</p>
+  <ul>
+    <li>Server data</li>
+    <li>Templates</li>
+    <li>User data</li>
+    <li>Premium status</li>
+  </ul>
+  <p>Email: <a href="mailto:skylinebotstudio@outlook.com">skylinebotstudio@outlook.com</a><br>
+  We respond within 72 hours.</p>
 </section>
 
 <section>
-    <h2>8. Children’s Privacy</h2>
-    <p>
-        Structura does not knowingly collect information from children under 13.  
-        It is the responsibility of server administrators to ensure compliance with Discord’s Terms of Service.
-    </p>
+  <h3>Children’s Privacy</h3>
+  <p>Structura is not intended for individuals under 13, in compliance with Discord’s Terms of Service.</p>
 </section>
 
 <section>
-    <h2>9. Security Measures</h2>
-    <p>
-        Because Structura stores data locally on your hosting environment, 
-        the security of your data depends on the security of your system.
-        We recommend:
-    </p>
-    <ul>
-        <li>Using a secure hosting provider</li>
-        <li>Keeping your `.env` file private</li>
-        <li>Not sharing bot tokens with anyone</li>
-    </ul>
+  <h3>Policy Changes</h3>
+  <p>This Privacy Policy may be updated at any time. Continued use of Structura means you accept any changes.</p>
 </section>
 
 <section>
-    <h2>10. Changes to This Policy</h2>
-    <p>
-        We may modify this Privacy Policy at any time. Updates will appear on our GitHub Pages website.
-        Continued use of the bot after changes means you accept the updated policy.
-    </p>
-</section>
-
-<section>
-    <h2>11. Contact</h2>
-    <p>If you have questions or concerns, contact us at:</p>
-    <p>
-        📧 <strong>skylinebotstudio@outlook.com</strong><br>
-        🌐 Website: Coming Soon  
-    </p>
+  <h3>Contact</h3>
+  <p>Skyline Bot Studio<br>
+  Email: <a href="mailto:skylinebotstudio@outlook.com">skylinebotstudio@outlook.com</a></p>
 </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Skyline Bot Studio — All Rights Reserved.</p>
+  <p>© 2025 Skyline Bot Studio – Structura Bot</p>
+  <p>
+    <a href="index.html">Home</a> ·
+    <a href="pricing.html">Pricing</a> ·
+    <a href="support.html">Support</a> ·
+    <a href="tutorials.html">Tutorials</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms-of-service.html">Terms of Service</a>
+  </p>
 </footer>
 
 </body>
